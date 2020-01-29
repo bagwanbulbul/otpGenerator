@@ -36,6 +36,6 @@ var otp = "0123456789"
 sendMail(email,otp)
 
 
-// app.listen(4000, () => console.log('server is listening 4000....'));
+app.listen(4000, () => console.log('server is listening 4000....'));
 
 
