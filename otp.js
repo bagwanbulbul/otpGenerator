@@ -17,9 +17,9 @@ var transport = nodemailer.createTransport({
 });
 function sendMail(email,otp){
     var details = {
-        from: "bulbul18@navgurukul.org",
+        from: "anjalip18@navgurukul.org",
         to:email,
-        subject: "hffhfhfhhjfhjf",
+        subject: "your otp ",
         html:otp
     };
     transport.sendMail(details, function(err,data){
@@ -31,8 +31,8 @@ function sendMail(email,otp){
         }
     })
 }
-var email = "anjalis18@navgurukul.org";
-var otp = "0123456789"
+var email = "anjalip18@navgurukul.org";
+var otp = otpGenerator.generate(4,{upperCase:false,specialChars:false,alphabets:false})
 sendMail(email,otp)
 
 
